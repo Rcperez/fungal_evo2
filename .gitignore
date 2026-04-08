@@ -1,0 +1,16 @@
+*.fasta
+*.fa
+*.fna
+*.gz
+*.parquet
+*.npy
+*.pt
+*.bin
+*.safetensors
+checkpoints/
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.env
+.DS_Store
+hf_cache/

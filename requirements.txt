@@ -1,0 +1,31 @@
+# Evo2 LoRA Fine-Tuning — N. crassa OR74A
+# Tested on Google Colab A100 (CUDA 12, Python 3.12)
+#
+# Install order matters:
+#   1. torch (via pytorch.org wheel)
+#   2. flash-attn (prebuilt wheel — never compile from source on Colab)
+#   3. everything else
+
+# Core
+torch>=2.1.0
+torchvision
+torchaudio
+
+# Evo2 and PEFT
+evo2
+transformers==4.40.2
+peft==0.10.0
+accelerate
+
+# Data
+pandas
+pyarrow
+numpy
+
+# Utilities
+requests
+biopython
+matplotlib
+
+# flash-attn — install separately via prebuilt wheel (see notebook Cell 1):
+# pip install https://github.com/Dao-AILab/flash-attention/releases/download/v2.8.1/flash_attn-2.8.1+cu12torch2.10cxx11abiTRUE-cp312-cp312-linux_x86_64.whl
